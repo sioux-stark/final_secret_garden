@@ -65,7 +65,10 @@ passport.deserializeUser(function(id, done){
 // WHEN SOMEONE WANTS THE SIGNUP PAGE
 app.get("/sign_up", function (req, res) {
   res.render("users/sign_up");
+  res.redirect("/login")
 });
+
+
 
 // WHEN SOMEONE  SUBMITS A SIGNUP PAGE
 app.post("/users", function (req, res) {
@@ -83,7 +86,8 @@ app.post("/users", function (req, res) {
       req.login(user, function(){
         // after login redirect show page
         console.log("Id: ", user.id)
-        res.redirect('/users/' + user.id);
+        // res.redirect('/users/' + user.id);
+        res.redirect('/gardenUpload');
       });
     })
 });

@@ -1,3 +1,57 @@
+body {
+  font-family: 'Lato', sans-serif;
+  color:rgb(98,83,62)
+}
+
 .search{
   margin-top:10px;
 }
+
+.login{
+  padding-top:140px;
+
+}
+
+.information{
+  padding-top:90px;
+  padding-left:30px;
+}
+
+#main{
+  height:1000px;
+}
+
+.email{
+  margin-bottom:10px;
+}
+
+.password{
+  margin-bottom:10px;
+}
+
+h4{
+  margin-bottom:30px;
+  color:rgb(144, 198, 149);
+}
+
+.textInformation{
+  height: 400px;
+ padding-left: 50px;
+}
+
+#main .textInformation{
+  background:#F7F7F6;
+  padding-bottom:70px;
+
+ 
+}
+
+h1{
+
+}
+
+.btn-sm, .btn-group-sm>.btn {
+  border-radius:0px;
+
+}
+
