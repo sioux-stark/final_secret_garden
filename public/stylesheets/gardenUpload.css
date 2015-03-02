@@ -1,9 +1,12 @@
 body{
- font-family: 'Lato', sans-serif;
-
+  background:#F7F7F6;
+  font-family: 'Lato', sans-serif;
 }
 
 #container{
   margin-top:50px;
+}
 
+img{
+  border-radius:5px;
 }

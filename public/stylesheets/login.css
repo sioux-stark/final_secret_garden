@@ -1,12 +1,11 @@
 body{
-  background:url(/images/annagarden.jpg) no-repeat center center fixed;
-  background-size: cover;
-  height:100%;
+  background:#F7F7F6;
+  /*background:url(/images/annagarden.jpg) no-repeat center center fixed;*/
   width:100%;
   font-family: 'Lato', sans-serif;
 
-}
 
+}
 .row{
   margin-top:50px;
 }
@@ -16,3 +15,25 @@ body{
   
 }
 
+img{
+  border-radius:5px;
+}
+
+.email{
+  margin-bottom:10px;
+}
+
+.password{
+  margin-bottom:10px;
+}
+
+.btn-sm, .btn-group-sm>.btn {
+  border-radius:0px;
+}
+
+.loginPage{
+  margin-top:10;
+}
+.col-xs-3{
+  padding-top: 4px;
+}

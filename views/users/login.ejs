@@ -7,18 +7,26 @@
   <link href="/stylesheets/login.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+<div class="container">
  <div class="row">
-  <div class="col-xs-8 col-xs-offset-4 col-sm-6 col-sm-offset-4">
+  <div class="siginImage col-xs-9">
+      <img src="images/annagarden.jpg">
+  </div>
+  
+  <div class="col-xs-3">
   <form method="post" action="/login">
-  <div>
-    <input type="text" name="user[email]" placeholder="Email">
-  </div>
-  <div>
-    <input type="password" name="user[password]" placeholder="Password">
-  </div>
+    <div>
+      <input type="text" name="user[email]" placeholder="Email" class="email">
+    </div>
+    <div>
+      <input type="password" name="user[password]" placeholder="Password" class="password">
+    </div>
     <div class="form-group">
-    <input type="submit" value="Login" class="btn btn-Warning btn-sm btn-cust">
+      <input type="submit" value="Login" class="btn btn-Warning btn-sm btn-cust">
     </div>
   </form>
+</div>
+    
+</div>
   </body>
 </html>

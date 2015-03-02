@@ -9,14 +9,11 @@
   <div class="col-xs-12 col-sm-12 col-md-12">
      
   <% users.forEach(function (user){ %>
-    
-    <div id="gardenImagesContainer">
      <% user.gardens.forEach( function (garden) { %>
      <div class="col-xs-0 col-sm-2 col-md-2"></div>
-      <div class="gardenImages col-xs-12 col-sm-8 col-md-8"><img src="<%= garden.title ? "/photos/" + garden.title : "" %>"></div>
+      <div class="gardenImages col-xs-4"><img src="<%= garden.title ? "/photos/" + garden.title : "" %>"></div>
       <div class="col-xs-0 col-sm-2 col-md-2"></div>
     <%})%>
-    </div>
   <% })%>
 </div>
 </div>

@@ -1,9 +1,6 @@
 body{
-  background:url(../images/IMG_1714.jpg) no-repeat center center fixed;
-  background-size: cover;
-  height:100%;
-  width:100%;
   font-family: 'Lato', sans-serif;
+  background:#F7F7F6;
 }
 
 .row{
@@ -13,4 +10,24 @@ body{
 .form-group{
   margin-top: 10px;
   
+}
+
+.email{
+  margin-bottom:10px;
+}
+
+.password{
+  margin-bottom:10px;
+}
+
+.btn-sm, .btn-group-sm>.btn {
+  border-radius:0px;
+}
+
+.col-xs-3{
+  padding-top: 4px;
+}
+
+img{
+  border-radius:5px;
 }
