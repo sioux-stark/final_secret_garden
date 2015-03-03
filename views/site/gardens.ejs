@@ -2,22 +2,53 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta charset="utf-8">
+  <link href="/stylesheets/bootstrap.min.css" rel="stylesheet">
+  <link href="/stylesheets/main.css" rel="stylesheet" type="text/css">
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
   <link href="/stylesheets/gardens.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-  <div class="container">
-  <div class="row">
-  <div class="col-xs-12 col-sm-12 col-md-12">
+  <header>
+      <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+            <a class="navbar-brand" href="#">secret garden</a>
+          </div>
+          <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="/">home</a></li>
+              <li><a href="/login">login</a></li>
+              <li><a href="/sign_up">signup</a></li>
+              <li><a href="/logout">logout</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </nav>
+  </header>
+  <div class="container-fluid">
+    <div class="row rows">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
      
-  <% users.forEach(function (user){ %>
-     <% user.gardens.forEach( function (garden) { %>
-     
-      <div class="gardenImages col-xs-4"><img src="<%= garden.title ? "/photos/" + garden.title : "" %>"></div>
-      
-    <%})%>
-  <% })%>
- </div> 
-</div>
-</div>
+      <% users.forEach(function (user){ %>
+         <% user.gardens.forEach( function (garden) { %>
+         
+          <div class="gardenImages col-xs-12 col-lg-4 col-md-6 col-sm-12">
+            <img src="<%= garden.title ? "/photos/" + garden.title : "" %>">
+          </div>
+          
+        <%})%>
+      <% })%>
+
+      </div> 
+    </div>
+  </div>
 </body>
 </html>
